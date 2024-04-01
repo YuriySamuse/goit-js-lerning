@@ -5,8 +5,9 @@
 	"main": "app.js",
 	"scripts": {
 		"start": "node app.js",
-    "prestart": " echo \"prestart script\"" ,
-    "poststart": " echo \"postscript after\" " 
+		"prestart": " echo \"prestart script\"",
+		"poststart": " echo \"postscript after\" ",
+		"build": "babel src -d dist"
 	},
 	"keywords": [],
 	"author": "",
@@ -15,5 +16,10 @@
 		"express": "^4.19.2",
 		"joi": "^17.12.2",
 		"nanoid": "^5.0.6"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.24.1",
+		"@babel/core": "^7.24.3",
+		"@babel/preset-env": "^7.24.3"
 	}
 }
