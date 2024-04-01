@@ -1,12 +1,19 @@
 {
-  "name": "goit-js-lerning",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+	"name": "goit-js-lerning",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"start": "node app.js",
+    "prestart": " echo \"prestart script\"" ,
+    "poststart": " echo \"postscript after\" " 
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.19.2",
+		"joi": "^17.12.2",
+		"nanoid": "^5.0.6"
+	}
 }
